@@ -1,11 +1,13 @@
 # -*- coding: utf-8 -*-
 """
-Created on Thu Jan 20 12:36:59 2022
+Created on Thu Jan 27 12:38:42 2022
 
 @author: Rudrashis Dutta
+
+WAP Check if a set is a subset, using comparison operators.
 """
 
-test = [[(7, 2), (4, 5)], [(9, 6), (4, 3)]]
-addVal = [3, 2]
-modTouple = [[tuple(list(idx) + [val]) for idx in key] for key, val in zip(test, addVal)]
-print(modTouple)
+a = {1, 2, 3, 4, 5}
+b = {1, 2, 3}
+print(a <= b)
+print(a >= b)

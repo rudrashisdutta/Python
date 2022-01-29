@@ -1,12 +1,11 @@
 # -*- coding: utf-8 -*-
 """
-Created on Thu Jan 20 12:55:24 2022
+Created on Thu Jan 27 12:39:06 2022
 
 @author: Rudrashis Dutta
+
+WAP Is a set a subset of itself?
 """
 
-list1 = [(32, 51), (22,13), (94, 65, 77), (70), (80, 61, 13, 17)]
-k = 2
-
-result_list = [element for element in list1 if len(element) != k]
-print(result_list)
+a = {1, 2, 3, 4, 5}
+print(a.issubset(a))

@@ -1,11 +1,15 @@
 # -*- coding: utf-8 -*-
 """
-Created on Thu Jan 20 12:36:59 2022
+Created on Thu Jan 27 12:38:42 2022
 
 @author: Rudrashis Dutta
+
+WAP Check if a set a subset of another set.
 """
 
-tup1 = (10, 4, 5, 6)
-tup2 = (5, 6, 7, 5)
-res = tuple(ele1 % ele2 for ele1, ele2 in zip(tup1, tup2))
-print(res)
+a = {1, 6, 2, 3, 4, 5}
+b = {1, 2, 3, 6}
+if b.issubset(a):
+    print("Is a subset")
+else:
+    print("Is not a subset")

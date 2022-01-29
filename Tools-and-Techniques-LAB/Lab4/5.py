@@ -1,12 +1,20 @@
 # -*- coding: utf-8 -*-
 """
-Created on Thu Jan 20 12:37:09 2022
+Created on Thu Jan 27 12:39:36 2022
 
 @author: Rudrashis Dutta
-"""
-def count_digs(tup):
-    return sum([len(str(ele)) for ele in tup ])
 
-test_list = [(3, 4, 6, 723), (1, 2), (12345), (134, 234, 34)]
-test_list.sort(key = count_digs)
-print(test_list)
+WAP Add an element to a set,find the union ,intersection of elements in a set.
+"""
+
+a={"xyz",1,3,5,7,9,11}
+b={1,2,3,4,5,5,"abc","xyz"}
+
+a.add(100)
+print(a)
+
+c=a.union(b)
+print(c)
+
+d=a.intersection(b)
+print(d)

@@ -1,15 +1,14 @@
 # -*- coding: utf-8 -*-
 """
-Created on Thu Jan 20 13:03:04 2022
+Created on Thu Jan 27 12:54:20 2022
 
 @author: Rudrashis Dutta
+
+WAP Add all elements from another set to an existing set & display it.
 """
 
+a = {1, 2, 3, 4, 5}
+b = {4, 5, 6, 7, 8}
 
-
-test = [(5, 6, 7), (1, 3, 5), (8, 9, 19)]
-K = 1
-res = 1
-for ele in test:
-    res *= ele[K]
-print(res)
+a.update(b)
+print(a)
